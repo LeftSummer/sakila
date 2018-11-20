@@ -1,0 +1,18 @@
+spring:
+  # profiles:
+  #  active: prod
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/sakila
+    username: root
+    password: 199299
+mybatis:
+  type-aliases-package: com.summer.left.sakila.model
+  mapper-locations: classpath:mapper/orgin/*.xml
+logging:
+  level:
+    com:
+      summer:
+        left:
+          sakila:
+            mapper: debug
